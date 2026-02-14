@@ -1,0 +1,43 @@
+package practical;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class keybActions {
+	ChromeDriver driver;
+	void launch() {
+	 driver=new ChromeDriver();
+	 driver.manage().window().maximize();
+	 driver.get("https://www.globalsqa.com/demo-site/#google_vignette");
+}
+	void mousehover() throws InterruptedException {		
+
+		Actions act=new Actions(driver);
+		WebElement mo=driver.findElement(By.xpath("//*[@id=\"menu-item-7128\"]/a"));
+		act.moveToElement(mo).build().perform();
+		Thread.sleep(3000);        
+       
+	}
+
+		void keyActions() {
+        
+        WebElement s=driver.findElement(By.id("s"));	
+		s.sendKeys("Softaware Testing");
+		s.sendKeys(Keys.ENTER);
+	
+		
+
+
+	}
+
+	public static void main(String[] args) throws InterruptedException {
+		keybActions o=new keybActions();
+		o.launch();
+		o.mousehover();
+		o.keyActions();
+	}
+
+}
