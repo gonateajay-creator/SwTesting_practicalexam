@@ -1,0 +1,20 @@
+Section A 
+
+*1* Rapido - book ride
+1- User should book ride successfully.
+2- verify that user should enter valid pickup address.
+
+*2*Udemy certificate download
+1-Verify that Certificate download option should be visible after course complete.
+2-verify that certificate downloaded if course is complete. 
+
+*3*
+1-check that like should be visible if anyone like pictures or reels
+2-check that comment should delete.
+
+*4*
+1-check that statement should download in pdf format.
+2-check that statement download option should be visible.
+
+*5*
+1-check that
